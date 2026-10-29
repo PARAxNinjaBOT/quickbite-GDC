@@ -13,10 +13,10 @@ const FoodCard = ({ food }) => {
     <article className="food-card" aria-label={food.name}>
       <div className="food-image-wrap">
            <img
-  src="/canteenlogo.jpeg"
+  src="food.image"
   alt={food.name}
   loading="lazy"
-  onError={(e) => { e.currentTarget.src = "/canteenlogo.jpeg"; }}
+  onError={(e) => { e.currentTarget.src = "food.image"; }}
 />
         {food.rating && (
           <span className="rating-pill" aria-label={`Rating: ${food.rating}`}>
