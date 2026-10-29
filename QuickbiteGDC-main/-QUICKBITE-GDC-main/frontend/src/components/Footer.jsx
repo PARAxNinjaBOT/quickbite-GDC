@@ -8,7 +8,7 @@ const Footer = () => (
       <div className="footer-brand">
         <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", marginBottom: "0.6rem" }}>
           <img
-            src="/gdc-logo.jpg"
+            src="/gdclogo.jpeg"
             alt="Government College Dharamshala"
             style={{ width: 38, height: 38, borderRadius: "50%", objectFit: "cover", border: "2px solid var(--line)", flexShrink: 0 }}
           />
