@@ -36,14 +36,13 @@ const CartSidebar = () => {
         <div className="cart-list">
           {items.map((item) => (
             <div className="cart-row" key={item._id}>
-              <img
-                src={item.image}
-                alt={item.name}
-                onError={(e) => {
-                  e.currentTarget.src =
-                    "https://images.unsplash.com/photo-1567521464027-f127ff144326?auto=format&fit=crop&w=200&q=60";
-                }}
-              />
+             <img 
+  src={item.image} 
+  alt={item.name}
+  onError={(e) => {
+    e.currentTarget.src = "/canteenlogo.jpeg";
+  }}
+/>
               <div>
                 <span className="cart-item-name">{item.name}</span>
                 <span>₹{item.price} each</span>
