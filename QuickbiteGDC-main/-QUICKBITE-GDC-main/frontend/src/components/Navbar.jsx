@@ -23,7 +23,7 @@ const Navbar = () => {
       <Link className="brand" to="/">
         {/* GDC College Logo */}
         <img
-          src="/gdclogo.jpg"
+          src="/gdclogo.jpeg"
           alt="Government College Dharamshala Logo"
           className="gdc-logo"
         />
