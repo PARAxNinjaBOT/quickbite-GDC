@@ -12,12 +12,12 @@ const FoodCard = ({ food }) => {
   return (
     <article className="food-card" aria-label={food.name}>
       <div className="food-image-wrap">
-           <img
-  src="food.image"
-  alt={food.name}
-  loading="lazy"
-  onError={(e) => { e.currentTarget.src = "food.image"; }}
-/>
+         <img
+          src={food.image || FALLBACK_IMAGE}
+          alt={food.name}
+          loading="lazy"
+          onError={(e) => { e.currentTarget.src = FALLBACK_IMAGE; }}
+        />
         {food.rating && (
           <span className="rating-pill" aria-label={`Rating: ${food.rating}`}>
             <Star size={12} fill="currentColor" />
