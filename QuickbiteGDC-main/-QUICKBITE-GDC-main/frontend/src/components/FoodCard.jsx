@@ -3,7 +3,7 @@ import React from "react";
 import { useCart } from "../context/CartContext";
 
 const FALLBACK_IMAGE =
-  "/canteenlogo.jpeg";
+  "/https://files.yappe.in/place/full/college-canteen-7972319.webp";
 
 const FoodCard = ({ food }) => {
   const { addToCart } = useCart();
