@@ -3,7 +3,7 @@ import React from "react";
 import { useCart } from "../context/CartContext";
 
 const FALLBACK_IMAGE =
-  "/https://files.yappe.in/place/full/college-canteen-7972319.webp";
+  "/canteenlogo.jpeg";
 
 const FoodCard = ({ food }) => {
   const { addToCart } = useCart();
@@ -12,12 +12,12 @@ const FoodCard = ({ food }) => {
   return (
     <article className="food-card" aria-label={food.name}>
       <div className="food-image-wrap">
-        <img
-          src={food.image || FALLBACK_IMAGE}
-          alt={food.name}
-          loading="lazy"
-          onError={(e) => { e.currentTarget.src = FALLBACK_IMAGE; }}
-        />
+           <img
+  src="/canteenlogo.jpeg"
+  alt={food.name}
+  loading="lazy"
+  onError={(e) => { e.currentTarget.src = "/canteenlogo.jpeg"; }}
+/>
         {food.rating && (
           <span className="rating-pill" aria-label={`Rating: ${food.rating}`}>
             <Star size={12} fill="currentColor" />
